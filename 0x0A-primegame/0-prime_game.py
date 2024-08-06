@@ -4,17 +4,17 @@
 
 def isprime(n):
     """ Return prime number """
-    for j in range(2, n):
-        if n % j == 0:
+    for i in range(2, n):
+        if n % i == 0:
             return False
     return True
 
 
 def delete_numbers(n, nums):
     """ Remove numbers - return zero """
-    for j in range(len(nums)):
-        if nums[j] % n == 0:
-            nums[j] = 0
+    for i in range(len(nums)):
+        if nums[i] % n == 0:
+            nums[i] = 0
 
 
 def isWinner(x, nums):
@@ -54,7 +54,7 @@ def isWinner(x, nums):
         else:
             Ben += 1
         # print("Maria: {}, Ben: {}".format(Maria, Ben))
-    if Maria == Ben:
+    if Maria == aBen:
         return None
     if Maria > Ben:
         return "Maria"
